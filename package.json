@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --open",
-    "build": "webpack --mode production"
+    "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -21,7 +23,7 @@
   "bugs": {
     "url": "https://github.com/Sgutierrezgf/react-shop/issues"
   },
-  "homepage": "https://github.com/Sgutierrezgf/react-shop#readme",
+  "homepage": "https://Sgutierrezgf.io/react-shop",
   "dependencies": {
     "@babel/core": "^7.19.6",
     "@babel/plugin-transform-runtime": "^7.19.6",
@@ -40,6 +42,7 @@
   },
   "devDependencies": {
     "css-loader": "^6.7.1",
+    "gh-pages": "^4.0.0",
     "mini-css-extract-plugin": "^2.6.1",
     "sass": "^1.55.0",
     "sass-loader": "^13.1.0",
